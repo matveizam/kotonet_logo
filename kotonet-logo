@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="100%" height="100%">
+  <defs>
+    <!-- Вертикальный градиент контура тела (от циан к фиолетовому) -->
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f5ff" />
+      <stop offset="40%" stop-color="#00c3ff" />
+      <stop offset="70%" stop-color="#4f6bed" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+
+  <!-- Внешний силуэт (облако с ушами) -->
+  <path
+    d="M 400 580
+       L 240 580
+       C 155 580 90 530 90 460
+       C 90 390 150 340 215 340
+       C 225 280 240 220 255 175
+       C 263 150 290 150 298 175
+       C 320 208 355 228 400 228
+       C 445 228 480 208 502 175
+       C 510 150 537 150 545 175
+       C 560 220 575 280 585 340
+       C 650 340 710 390 710 460
+       C 710 530 645 580 560 580
+       Z"
+    fill="none"
+    stroke="url(#bodyGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Левый глаз -->
+  <g id="eye-left">
+    <circle cx="305" cy="375" r="36" fill="#00f5ff" />
+    <!-- Серповидный блик в верхнем правом секторе -->
+    <path
+      d="M 314 340
+         A 36 36 0 0 1 340 384
+         Q 323 363 314 340 Z"
+      fill="#ffffff"
+    />
+  </g>
+
+  <!-- Правый глаз -->
+  <g id="eye-right">
+    <circle cx="495" cy="375" r="36" fill="#00f5ff" />
+    <!-- Серповидный блик в верхнем правом секторе -->
+    <path
+      d="M 504 340
+         A 36 36 0 0 1 530 384
+         Q 513 363 504 340 Z"
+      fill="#ffffff"
+    />
+  </g>
+
+  <!-- Нос: скруглённый перевёрнутый треугольник с заливкой -->
+  <path
+    d="M 383 412
+       H 417
+       C 425 412 428 418 423 424
+       L 406 436
+       C 403 440 397 440 394 436
+       L 377 424
+       C 372 418 375 412 383 412
+       Z"
+    fill="#00f5ff"
+    stroke="#00f5ff"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Рот: сдвоенная дуга без вертикальной перемычки -->
+  <path
+    d="M 348 460
+       C 348 476 362 484 374 484
+       C 388 484 398 474 400 458
+       C 402 474 412 484 426 484
+       C 438 484 452 476 452 460"
+    fill="none"
+    stroke="#00f5ff"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
